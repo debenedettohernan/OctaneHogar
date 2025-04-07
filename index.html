@@ -1,0 +1,90 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muebles a Medida</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.jpg" alt="Logo" class="logo">
+      <h1>Muebles Futuristas</h1>
+    </div>
+    <nav class="menu-secciones">
+      <a href="#quienes" onclick="mostrarSeccion('quienes')">Quiénes somos</a>
+      <a href="#realizamos" onclick="mostrarSeccion('realizamos')">Nuestros trabajos</a>
+      <a href="#pedido" onclick="mostrarSeccion('pedido')">Dudas/Consultas</a>
+      <a href="#comentarios" onclick="mostrarSeccion('comentarios')">Comentarios</a>
+    </nav>
+  </header>
+
+  <section id="quienes" class="seccion">
+      <h2>Quiénes somos</h2>
+      <h3>Bienvenido a <strong>OCTANE HOGAR</strong> - Herrería y Muebles Industriales</h3>
+    
+      <p>En <strong>OCTANE HOGAR</strong>, combinamos <strong>pasión, diseño y precisión</strong> para crear muebles industriales y estructuras metálicas de alta calidad.</p>
+    
+      <p>Con años de experiencia en herrería, ofrecemos <strong>soluciones personalizadas</strong> que combinan funcionalidad, resistencia y estilo. Desde mesas y estanterías hasta detalles únicos en metal, cada pieza que fabricamos está pensada para brindar durabilidad y un diseño auténtico.</p>
+    
+      <p>Trabajamos con <strong>materiales de primera calidad</strong> y cuidamos cada detalle para lograr <strong>acabados impecables</strong>. Si buscás muebles con carácter, estructuras robustas o soluciones a medida para tu hogar o negocio, estás en el lugar indicado.</p>
+    
+      <p><em>Convertimos el metal en arte funcional.</em></p>
+    
+      <h4>Contactanos y hagamos realidad tu proyecto.</h4>
+        <a href="https://wa.me/5491123456789" class="whatsapp-btn" target="_blank">Chatear por WhatsApp</a>
+   </section>
+
+  <section id="realizamos" class="seccion">
+    <h2>Nuestros trabajos</h2>
+    <p>Fabricamos muebles únicos y mesas personalizadas adaptadas a tu espacio y estilo. Modernos, rústicos, minimalistas y más.</p>
+    <div class="swiper swiper-pequeno">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/1.jpg" alt="Trabajo 1"></div>
+        <div class="swiper-slide"><img src="img/2.jpg" alt="Trabajo 2"></div>
+        <div class="swiper-slide"><img src="img/3.jpg" alt="Trabajo 3"></div>
+        <div class="swiper-slide"><img src="img/4.jpg" alt="Trabajo 4"></div>
+        <div class="swiper-slide"><img src="img/5.jpg" alt="Trabajo 5"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section id="pedido" class="seccion">
+    <h2>¿Buscas transformar tu espacio?</h2>
+    <p>Ofrecemos una amplia variedad de soluciones en herrería y diseño industrial, incluyendo:</p>
+    <ul>
+      <li>Mobiliario a medida: Mesas, estanterías, bancos y otros muebles con estructura metálica y detalles en madera.</li>
+      <li>Estructuras metálicas: Cerramientos, pérgolas, barandas y escaleras con diseños modernos y funcionales.</li>
+      <li>Divisiones y portones: Soluciones en metal para interiores y exteriores, combinando seguridad y estilo.</li>
+      <li>Detalles arquitectónicos: Revestimientos, marcos, pasamanos y otros elementos decorativos en metal y madera.</li>
+    </ul>
+
+    <p>Cada proyecto se adapta a las necesidades del cliente, garantizando calidad, resistencia y diseño personalizado.</p>
+    <a href="https://wa.me/5491123456789" class="whatsapp-btn" target="_blank">Chatear por WhatsApp</a>
+  </section>
+
+  <section id="comentarios" class="seccion">
+    <h2>Comentarios de clientes</h2>
+    <p>Iniciá sesión con Facebook para dejar tu comentario:</p>
+    <div class="fb-comments" data-href="https://tu-pagina.github.io" data-width="100%" data-numposts="5"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Muebles Futuristas | Hecho con ❤️</p>
+  </footer>
+
+  <a href="https://wa.me/5491123456789" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0" nonce="123"></script>
+</body>
+</html>
