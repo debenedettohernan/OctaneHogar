@@ -117,8 +117,9 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     transition: transform 0.3s;
-  }
-  
+    text-decoration: none;
+}
+
   .whatsapp-float:hover {
     transform: scale(1.1);
   }
@@ -146,4 +147,23 @@ body {
   .redes-sociales a:hover {
     color: red;
   }
+  #realizamos {
+    max-width: 1200px;
+    width: 100%;
+  }
+  .card {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  .card-img-top {
+    object-fit: cover;
+    height: 250px;
+  }
+  
   
