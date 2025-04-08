@@ -2,10 +2,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muebles a Medida</title>
+  <title>OCTANE HOGAR</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
   <header>
@@ -18,15 +20,39 @@
       <a href="https://www.instagram.com/tu_usuario" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/tu_usuario" target="_blank"><i class="fab fa-facebook"></i></a>
     </div>
-  
-    <nav class="menu-secciones">
-      <a href="#quienes" onclick="mostrarSeccion('quienes')">Quiénes somos</a>
-      <a href="#realizamos" onclick="mostrarSeccion('realizamos')">Nuestros trabajos</a>
-      <a href="#pedido" onclick="mostrarSeccion('pedido')">Dudas/Consultas</a>
-      <a href="#comentarios" onclick="mostrarSeccion('comentarios')">Comentarios</a>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto"> <!-- Añadido mx-auto para centrar -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#quienes" onclick="mostrarSeccion('quienes')">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pedido" onclick="mostrarSeccion('pedido')">Materiales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#comentarios" onclick="mostrarSeccion('comentarios')">Formas de contactar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#realizamos" onclick="mostrarSeccion('realizamos')" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tipos de trabajo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Living</a></li>
+                <li><a class="dropdown-item" href="#">Comedor</a></li>
+                <li><a class="dropdown-item" href="#">Repisas</a></li>
+                <li><a class="dropdown-item" href="#">Exteriores</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    
   </header>
-  
+  <!-- ---------------------PRESENTACION------------ -->
   <section id="quienes" class="seccion">
       <h2>Quiénes somos</h2>
       <h3>Bienvenido a <strong>OCTANE HOGAR</strong> - Herrería y Muebles Industriales</h3>
@@ -40,26 +66,53 @@
       <p><em>Convertimos el metal en arte funcional.</em></p>
     
       <h4>Contactanos y hagamos realidad tu proyecto.</h4>
-        <a href="https://wa.me/5491123456789" class="whatsapp-btn" target="_blank">Chatear por WhatsApp</a>
-   </section>
 
+   </section>
+<!-- ---------------------GALERIA DE FOTOS------------ -->
   <section id="realizamos" class="seccion">
     <h2>Nuestros trabajos</h2>
     <p>Fabricamos muebles únicos y mesas personalizadas adaptadas a tu espacio y estilo. Modernos, rústicos, minimalistas y más.</p>
-    <div class="swiper swiper-pequeno">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/1.jpg" alt="Trabajo 1"></div>
-        <div class="swiper-slide"><img src="img/2.jpg" alt="Trabajo 2"></div>
-        <div class="swiper-slide"><img src="img/3.jpg" alt="Trabajo 3"></div>
-        <div class="swiper-slide"><img src="img/4.jpg" alt="Trabajo 4"></div>
-        <div class="swiper-slide"><img src="img/5.jpg" alt="Trabajo 5"></div>
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+<!-- ---------------------prueba de tarjetas------------ -->
+    <div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <img src="img/1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    
   </section>
-
+<!-- ---------------------MATERIALES------------ -->
   <section id="pedido" class="seccion">
     <h2>¿Buscas transformar tu espacio?</h2>
     <p>Ofrecemos una amplia variedad de soluciones en herrería y diseño industrial, incluyendo:</p>
@@ -71,15 +124,15 @@
     </ul>
 
     <p>Cada proyecto se adapta a las necesidades del cliente, garantizando calidad, resistencia y diseño personalizado.</p>
-    <a href="https://wa.me/5491123456789" class="whatsapp-btn" target="_blank">Chatear por WhatsApp</a>
   </section>
-
+<!-- ---------------------FORMAS DE CONTACTAR------------ -->
   <section id="comentarios" class="seccion">
     <h2>Comentarios de clientes</h2>
     <p>Iniciá sesión con Facebook para dejar tu comentario:</p>
     <div class="fb-comments" data-href="https://tu-pagina.github.io" data-width="100%" data-numposts="5"></div>
+    <a href="https://wa.me/5491123456789" class="whatsapp-btn" target="_blank">Chatear por WhatsApp</a>
   </section>
-
+<!-- ---------------------FOOTER------------ -->
   <footer>
     <p>© 2025 OCTANE HOGAR | Hecho con ❤️</p>
   </footer>
