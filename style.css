@@ -123,13 +123,7 @@ body {
   .whatsapp-float:hover {
     transform: scale(1.1);
   }
-  
-  footer {
-    background: #fffefe;
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid red;
-  }
+
   .redes-sociales {
     position: absolute;
     top: 20px;
@@ -165,5 +159,10 @@ body {
     object-fit: cover;
     height: 250px;
   }
-  
-  
+    
+  footer {
+    background: #fffefe;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid red;
+  }
