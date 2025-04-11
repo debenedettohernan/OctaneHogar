@@ -24,24 +24,24 @@
     </div>
     <nav class="navbar navbar-expand-lg bg-white ">
 
-          <ul class="navbar-nav mx-auto"> <!-- Añadido mx-auto para centrar -->
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#quienes" onclick="mostrarSeccion('quienes')">Quienes
-                somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pedido" onclick="mostrarSeccion('pedido')">Soluciones en herreria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#realizamos" onclick="mostrarSeccion('realizamos')" r>
-                Tipos de trabajo
-              </a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="#comentarios" onclick="mostrarSeccion('comentarios')">Formas de contactar</a>
-            </li>
-          </ul>
-        
+      <ul class="navbar-nav mx-auto"> <!-- Añadido mx-auto para centrar -->
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#quienes" onclick="mostrarSeccion('quienes')">Quienes
+            somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pedido" onclick="mostrarSeccion('pedido')">Soluciones en herreria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#realizamos" onclick="mostrarSeccion('realizamos')" r>
+            Tipos de trabajo
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#comentarios" onclick="mostrarSeccion('comentarios')">Formas de contactar</a>
+        </li>
+      </ul>
+
       </div>
     </nav>
   </header>
@@ -72,7 +72,7 @@
     <p>Fabricamos muebles únicos y mesas personalizadas adaptadas a tu espacio y estilo. Modernos, rústicos,
       minimalistas y más.</p>
 
-    <!-- ---------------------ptarjetas------------ -->
+    <!-- ---------------------tipos de trabajo------------ -->
     <div class="row justify-content-center container-fluid">
       <div class="col-md-6 col-lg-4 mb-3 mb-sm-0">
         <div class="card">
@@ -130,7 +130,7 @@
     <div class="fb-comments" data-href="https://tu-pagina.github.io" data-width="100%" data-numposts="5"></div>
     <a href="https://wa.me/5491123456789" class="whatsapp-btn" target="_blank">Chatear por WhatsApp</a>
   </section>
-    <!-- ---------------------ver mas muebles industriales------------ -->
+  <!-- ---------------------ver mas muebles industriales------------ -->
   <section id="muebles" class="seccion">
     <div class="row justify-content-center container-fluid">
       <div class="col-md-6 col-lg-4 mb-3 mb-sm-0">
@@ -139,7 +139,7 @@
           <div class="card-body">
             <h5 class="card-title">Habitacion</h5>
             <p class="card-text">Tipos de trabajos para la habitacion</p>
-            <a href="#muebles" onclick="mostrarSeccion('muebles')" class="btn btn-primary">Ver mas</a>
+            <a href="#habitacion" onclick="mostrarSeccion('habitacion')" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@
           <div class="card-body">
             <h5 class="card-title">Living/Comedor</h5>
             <p class="card-text">Tipos de trabajos para el living</p>
-            <a href="#" class="btn btn-primary">Ver mas</a>
+            <a href="#living" onclick="mostrarSeccion('living')" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@
           <div class="card-body">
             <h5 class="card-title">Cocina</h5>
             <p class="card-text">Tipos de trabajos para la cocina</p>
-            <a href="#" class="btn btn-primary">Ver mas</a>
+            <a href="#cocina" onclick="mostrarSeccion('cocina')" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
       </div>
@@ -174,10 +174,90 @@
         </div>
       </div>
     </div>
-</section>
-  </div>
-</nav>
   </section>
+  <!-- ---------------------ver mas HABITACION------------ -->
+  <section id="habitacion" class="seccion">
+    <div class="card text-bg-dark">
+      <img src="img/estanteria1.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title" style="color: black;">CODIGO: H01</h5> <!-- Estilo en línea -->
+      </div>
+    </div>
+    
+  </section>
+    <!-- ---------------------ver mas living/comedor------------ -->
+    <section id="living" class="seccion">
+      <div class="card-group">
+        <div class="card">
+          <img src="img/estanteria3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/estanteria4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/estanteria2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+        <!-- ---------------------ver mas cocina------------ -->
+    <section id="cocina" class="seccion">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/estanteria9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/estanteria8.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/estanteria7.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/estanteria6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- ---------------------ver mas lavadero------------ -->
 
   <!-- ---------------------FOOTER------------ -->
   <footer>
