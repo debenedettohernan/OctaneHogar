@@ -3,16 +3,22 @@ function mostrarSeccion(id) {
   secciones.forEach(seccion => {
       seccion.classList.remove('active');
   });
+
   const seccionActiva = document.getElementById(id);
   if (seccionActiva) {
       seccionActiva.classList.add('active');
-      // Agregar la entrada al historial
-      history.pushState({ section: id }, '', `#${id}`);
+
+      // Solo agregamos al historial si fue navegación directa (no desde popstate)
+      if (history.state?.section !== id) {
+          history.pushState({ section: id }, '', `#${id}`);
+      }
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  mostrarSeccion('quienes'); // Mostrar "quienes" al cargar
+  // Mostrar la sección correspondiente al hash, o "quienes" si no hay hash
+  const hash = location.hash.replace('#', '') || 'quienes';
+  mostrarSeccion(hash);
 
   // Mostrar modal a los 5 segundos
   setTimeout(() => {
@@ -20,9 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 5000);
 });
 
-// Manejar el evento popstate
+// Evento popstate (cuando el usuario usa los botones del navegador)
 window.addEventListener('popstate', (event) => {
-  if (event.state) {
+  if (event.state && event.state.section) {
       mostrarSeccion(event.state.section);
+  }
+});
+
+// Evento hashchange (cuando el usuario cambia el hash manualmente)
+window.addEventListener('hashchange', () => {
+  const nuevaSeccion = location.hash.replace('#', '');
+  if (nuevaSeccion) {
+      mostrarSeccion(nuevaSeccion);
   }
 });
