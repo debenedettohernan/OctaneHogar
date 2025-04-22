@@ -20,11 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mostrar la sección correspondiente al hash, o "quienes" si no hay hash
   const hash = location.hash.replace('#', '') || 'quienes';
   mostrarSeccion(hash);
-
-  // Mostrar modal a los 5 segundos
-  setTimeout(() => {
-      mostrarModal();
-  }, 5000);
 });
 
 // Evento popstate (cuando el usuario usa los botones del navegador)
