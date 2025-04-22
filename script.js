@@ -8,12 +8,13 @@ function mostrarSeccion(id) {
   if (seccionActiva) {
       seccionActiva.classList.add('active');
 
-      // Solo agregamos al historial si fue navegación directa (no desde popstate)
-      if (history.state?.section !== id) {
+      // Solo agregamos al historial si el hash actual es distinto
+      if (location.hash.replace('#', '') !== id) {
           history.pushState({ section: id }, '', `#${id}`);
       }
   }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
   // Mostrar la sección correspondiente al hash, o "quienes" si no hay hash
